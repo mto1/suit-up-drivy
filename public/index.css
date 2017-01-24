@@ -1,0 +1,29 @@
+#conteneur
+{
+    display: flex;
+	flex-direction: center;
+	justify-content: center;
+}
+.taille_image_voiture 
+{
+width:300x;
+height:240px;
+}
+#car
+{
+    display: flex;
+	flex-direction: center;
+	justify-content: center;
+}
+#rental
+{
+    display: flex;
+	flex-direction: center;
+	justify-content: center;
+}
+#button
+{
+    display: flex;
+	flex-direction: center;
+	justify-content: center;
+}
