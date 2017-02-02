@@ -2,20 +2,77 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Drivy</title>
+	<link rel="stylesheet" media="screen" type="text/css" title="page_web" href="index.css"/>
   </head>
+
   <body>
-    <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-    </div>
-    <div id="rental">
-      <input class="begin" type="date" placeholder="Rental begin date"/>
-      <input class="end" type="date" placeholder="Rental end date"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
+	 
+	<img style="float:center" width="600" height="180" src="http://www.leblogdedarina.com/wp-content/uploads/2015/12/logo.png">
+	<img style="float:right" ;width="180" height="180" src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAaMAAAAJDQyNmQ4NmQ0LWFkNzUtNDE1ZS1hN2Y4LThhYmMwYTlhNzY5Ng.png">
+	
+	<br><br>
+	
+	<h2 align="center"> Sélectionnez une voiture : </h2>
+	<div id="conteneur">
+		<figure><button type="submit" id="button_p306" onclick="function_p306()"><img src="http://fr.academic.ru/pictures/frwiki/80/Peugeot_306_Break_front_20071026.jpg" class="taille_image_voiture" title="Peugeot 306"></button><figcaption>Peugeot 306</figcaption></figure>
+		<figure><button type="submit" id="button_rr_sport" onclick="function_rr_sport()"><img src="http://www.motorward.com/wp-content/images/2013/11/startech-rr-sport.jpg" class="taille_image_voiture" title="Range Rover Sport"></button><figcaption>Range Rover Sport</figcaption></figure>
+		<figure><button type="submit" id="button_porsche_boxster" onclick="function_porsche_boxster()"><img src="https://a.gaw.to/photos/6/3/63326_2015_porsche_Boxster.jpg" class="taille_image_voiture" title="Porsche Boxster"></button><figcaption>Porsche Boxster</figcaption></figure>
+	</div>
+	
+	<script>	
+	function function_p306()
+	{	
+		document.querySelector('#car .model').value = "p306"
+		document.querySelector('#car1 .model1').value = "Peugeot 306"
+		document.querySelector('#car .price-by-day').value = 20
+		document.querySelector('#car1 .price-by-day1').value = 20
+		document.querySelector('#car .price-by-km').value = 0.1	
+		document.querySelector('#car1 .price-by-km1').value = 0.1			
+	}
+	function function_rr_sport()
+	{	document.querySelector('#car .model').value = "rr-sport"
+		document.querySelector('#car .price-by-day').value = 60
+		document.querySelector('#car .price-by-km').value = 0.3
+		document.querySelector('#car1 .model1').value = "Range Rover Sport"
+		document.querySelector('#car1 .price-by-day1').value = 60
+		document.querySelector('#car1 .price-by-km1').value = 0.3
+		//document.getElementById("car").innerHTML = "Range Rover Sport		Price/day : 60 €		Price/km : 0.30 €";
+	}
+	function function_porsche_boxster()
+	{	
+		document.querySelector('#car .model').value = "p-boxster"
+		document.querySelector('#car .price-by-day').value = 100
+		document.querySelector('#car .price-by-km').value = 0.45
+		document.querySelector('#car1 .model1').value = "Porsche Boxster"
+		document.querySelector('#car1 .price-by-day1').value = 100
+		document.querySelector('#car1 .price-by-km1').value = 0.45
+		//document.getElementById("car").innerHTML = "Porsche Boxster		Price/day : 100 €		Price/km : 0.45 €";
+	}
+	</script>
+	
+	<br /><br />
+	
+    <div id="car"><label>Réf. Modéle :</label><input class="model" type="text" disabled="disabled"/></div>
+	<div id="car"><label>Prix par jour : </label><input class="price-by-day" type="number"disabled="disabled"/> </div>
+	<div id="car"><label>Prix par km : </label><input class="price-by-km" type="number"disabled="disabled"/></div>
+	<br />
+	<div id="car"><label>Distance en km : </label><input class="distance" type="number"></div>
+	
+	<br />
+	
+	<div id="rental"> <label>Début :</label> <input class="begin" type="date">	 	 </div>
+    <div id="rental"> <label>Fin :</label>	 <input class="end" type="date">	 	 </div>		<br />
+	<div id="option"> <label>Option (+4€ par jour):    </label> <input class="option" type="checkbox"> </div>
+	<br />
+	
+	<div id="button">
+    <button id="compute">Calculer</button>
+	</div>
+	
+	
+	<br />
+	
+	<center>
     <div id="actors"></div>
     <script id="template" type="x-tmpl-mustache">
       {{#actors}}
@@ -26,8 +83,100 @@
         </div>
       {{/actors}}
     </script>
+	</center>
+	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
     <script src="drivy.js"></script>
     <script src="index.js"></script>
-  </body>
+	
+	
+	<center><table border id ="facture">
+		<caption ALIGN=top></caption> 
+			<tr>
+				<th id = "test" COLSPAN=4>FACTURE</th>
+			</tr>
+			<tr>
+				<td COLSPAN=2>Voiture</td>
+				<td COLSPAN=2><div id ="car1"><input class="model1" type="text" disabled="disabled"/></div></td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>Debut</td>
+				<td COLSPAN=2><div id ="car1"><input class="debut" type="text" disabled="disabled"/></div></td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>Fin</td>
+				<td COLSPAN=2><div id ="car1"><input class="fin" type="text" disabled="disabled"/></div></td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>Prix/Jour</td>
+				<td COLSPAN=2><div id ="car1"><input class="price-by-day1" type="text" disabled="disabled"/></div></td>
+			</tr>
+
+			<tr>
+				<td COLSPAN=2>Nombre de jour</td>
+				<td COLSPAN=2><div id ="car1"><input class="jour" type="text" disabled="disabled"/></div></td>
+			</tr>
+			<!--<tr>
+				<td COLSPAN=2>Sous Total Jour</td>
+				<td COLSPAN=2><div id ="car1"><input class="total_jour" type="text" disabled="disabled"/></div></td>
+			</tr>-->
+			<tr>
+				<td COLSPAN=2>-----------------------------</td>
+				<td COLSPAN=2>----------------------------------</td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>Prix/km</td>
+				<td COLSPAN=2><div id ="car1"><input class="price-by-km1" type="text" disabled="disabled"/></div></td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>Distance(km)</td>
+				<td COLSPAN=2><div id ="car1"><input class="distance1" type="text" disabled="disabled"/></div></td>
+			</tr>
+			<!--<tr>
+				<td COLSPAN=2>Sous Total Distance</td>
+				<td COLSPAN=2><div id ="car1"><input class="total_km" type="text" disabled="disabled"/></div></td>
+			</tr>-->
+			<tr>
+				<td COLSPAN=2>-----------------------------</td>
+				<td COLSPAN=2>----------------------------------</td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>DETAILS FACTURE</td>
+				<td COLSPAN=2>----------------------------------</td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>-----------------------------</td>
+				<td COLSPAN=2>----------------------------------</td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>OWNER</td>
+				<td COLSPAN=2><div id ="car1"><input class="owner" type="text" disabled="disabled"/></div></td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>INSURANCE</td>
+				<td COLSPAN=2><div id ="car1"><input class="insurance" type="text" disabled="disabled"/></div></td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>ASSISTANCE</td>
+				<td COLSPAN=2><div id ="car1"><input class="assistance" type="text" disabled="disabled"/></div></td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>DRIVY</td>
+				<td COLSPAN=2><div id ="car1"><input class="drivy" type="text" disabled="disabled"/></div></td>
+			</tr>
+		
+			<tr>
+				<td COLSPAN=2>-----------------------------</td>
+				<td COLSPAN=2>----------------------------------</td>
+			</tr>
+			<tr>
+				<td COLSPAN=2>TOTAL A PAYER</td>
+				<td COLSPAN=2><div id ="car1"><input class="driver" type="text" disabled="disabled"/></div></td>
+			</tr>
+	</table></center>
+	
+	<br />
+	
+	
+</body>
 </html>

@@ -2,12 +2,12 @@
 {
     display: flex;
 	flex-direction: center;
-	justify-content: center;
+	justify-content: center;	
 }
-.taille_image_voiture 
+	.taille_image_voiture 
 {
-width:300x;
-height:240px;
+	width:300x;
+	height:240px;
 }
 #car
 {
@@ -27,3 +27,190 @@ height:240px;
 	flex-direction: center;
 	justify-content: center;
 }
+label
+{
+	display: block;
+	width: 150px;
+	float: left;
+}
+figcaption
+{
+    text-align: center;
+	text-shadow: 2px 2px 4px black;
+	font-size: 20px;
+}
+.model{
+    background-image: url('https://s-media-cache-ak0.pinimg.com/236x/b0/63/d8/b063d8210b1a3acf3fd5e7537232f81b.jpg');
+	background-size: 15px;
+	background-repeat: no-repeat;
+    background-position: center right;
+    text-align: center;
+    padding-right: 15px;
+}.model1{
+
+	background-size: 15px;
+	background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}.debut{
+
+	background-size: 15px;
+	background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.fin{
+
+	background-size: 15px;
+	background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.jour{
+
+	background-size: 15px;
+	background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.price-by-day {
+    background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.price-by-day1 {
+	background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.price-by-km {
+    background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.price-by-km1 {
+    background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.distance{
+    background-image: url("http://previews.123rf.com/images/happyroman/happyroman1202/happyroman120200046/12485591-Route-sinueuse-Banque-d'images.jpg");
+	background-size: 15px;
+	background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.distance1{
+
+	background-size: 15px;
+	background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.begin{
+	background-image: url('http://emojipedia-us.s3.amazonaws.com/cache/a0/19/a019d8d9c8bf267f55932446bda93807.png');
+    background-size: 15px;
+	background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+	padding-left: 30px;
+}
+.end{
+	background-image: url('http://emojipedia-us.s3.amazonaws.com/cache/a0/19/a019d8d9c8bf267f55932446bda93807.png');
+    background-size: 15px;
+	background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+	padding-left: 30px;
+	
+}
+.owner {
+    background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.insurance {
+    background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.assistance {
+    background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.driver {
+    background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.drivy {
+    background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.total_jour {
+	background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.total_km {
+	background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+.option{
+	background-image: url('http://annuaire.toques-auvergne.com/images/euro_off.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-align: right;
+    padding-right: 15px;
+}
+#option{
+	text-align: center;
+    display: flex;
+	flex-direction: center;
+	justify-content: center;
+}
+
+#arriere_plan {	
+	background:url(https://www.esta-registration.fr/blog/wp-content/uploads/2015/03/route-66-roadtrip.jpg);
+	opacity:3;
+	height:100%;
+	width:100%;
+}
+
+
+
+
+
